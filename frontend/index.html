@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <title>EcoMed</title>
+</head>
+<body>
+  <div class="nav">
+    <div class="nav-title">
+      <img src="eco.jpg" alt="EcoMed Logo" class="nav-logo">
+      <h1>EcoMed</h1>
+    </div>
+    <div class="nav-buttons">
+        <button><a href="#form">Here</a></button>
+        <button><a href="#about">About</a></button>
+        <button><a href="#faq">FAQ</a></button>
+    </div>
+  </div>
+  <div class="content">
+    <button id="mission-title" class="mission-button">Our Mission</button>
+    <p id="mission-statement" class="mission-statement">At EcoMed, we believe in a sustainable future. We are committed to reducing the environmental impact of medical practices by offering eco-friendly practices to improve your health.</p>
+  </div>
+  <div class="about">
+    <div>
+      <h2 id="about">About</h2>
+      <div class="disc">
+        <p>
+          At EcoMed, we believe in a healthier planet and a healthier you. Our mission is to provide eco-friendly alternatives for common symptoms, empowering individuals to make sustainable choices for both their health and the environment. 
+          We know that small changes can make a big difference, so we’ve created a platform where you can easily explore natural remedies and alternatives that align with your values.
+        </p>
+        <p>
+          Our AI-powered chatbot guides you through the process, offering personalized suggestions based on your symptoms and preferences. Whether you're looking for sustainable pain relief, 
+          eco-friendly skincare, or environmentally conscious wellness products, EcoMed is here to help you make choices that benefit both your well-being and the planet.
+        </p>
+      </div>
+    </div>
+    <button id="form-button" class="form-button">Form</button>
+    <div id="form-container" class="form-container" style="display: none;">
+      <form id="symptoms-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="message">Symptoms:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+    <div id="response-container" style="margin-top: 20px; display: none;">
+      <h3>AI Response:</h3>
+      <p id="ai-response"></p>
+    </div>
+  </div>
+</body>
+</html>
